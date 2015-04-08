@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/progtitle"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="prog.project.progclient2014.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_pw"
+        android:layout_alignLeft="@+id/test1"
+        android:text="PW"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/test1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_join_id"
+        android:layout_alignParentLeft="true"
+        android:text="ID"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:windowSoftInputMode="stateAlwaysVisible"
+         />
+    <requestFocus />
+
+    <Button
+        android:id="@+id/btn_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_login"
+        android:layout_alignBottom="@+id/btn_login"
+        android:layout_alignRight="@+id/txt_pw"
+        android:layout_marginRight="11dp"
+        android:text="Join"
+        android:width="200dp" />
+
+    <EditText
+        android:id="@+id/txt_join_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_pw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:width="500dp" />
+
+    <EditText
+        android:id="@+id/txt_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_join"
+        android:layout_alignLeft="@+id/txt_join_id"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:width="500dp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_pw"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="105dp"
+        android:layout_marginLeft="11dp"
+        android:text="Login"
+        android:width="200dp" />
+
+</RelativeLayout>

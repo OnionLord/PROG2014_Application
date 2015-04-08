@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_list_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&lt;USER>님의 알람"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TimePicker
+            android:id="@+id/picker_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_list_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="추가" />
+
+            <Button
+                android:id="@+id/btn_list_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="종료" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>
